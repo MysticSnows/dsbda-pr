@@ -1,0 +1,52 @@
+loc and iloc: indexing methods used to access data in a DataFrame
+
+With loc, you can specify the row labels and column labels to retrieve specific data. It takes the following Syntax: df.loc[row_label, column_label].
+
+iloc is an integer-based indexing method, meaning it is used to select data based on indices. Syntax: df.iloc[row_index, column_index].
+
+# true negative, etc
+Accuracy = (tn+tp)*100/(tp+tn+fp+fn) 
+
+True +ve/-ve: assumption is same as actual
+False +ve/-ve: assumption is wrong from actual
+
+Accuracy: TP+TN/(TP + FP + FP + FN)
+Precision: total +ve prediction		TP/(TP + FP)
+Recall: total actual +ve		TP/(TP + FN)
+F1 Score: favours classifier that has recall & precision similar
+	  2*Precision*Recall/(Pre + Recall)
+
+
+Boxplot
+sns.boxplot(x='Gender', y='Age', data=dataset)
+# X: categorical
+# Y: numeric
+# dots in fig are outliers
+
+-------------------------------------------------------------------------------------------
+Each quartile represents a specific percentage of the data.
+
+Here's the breakdown of the quartiles and their corresponding percentages:
+
+    First Quartile (Q1): This represents the 25th percentile of the data. It divides the data into the lower 25%.
+    Second Quartile (Q2): This represents the 50th percentile, which is also the median of the data. It divides the data into the lower 50% and the upper 50%.
+    Third Quartile (Q3): This represents the 75th percentile of the data. It divides the data into the lower 75%.
+
+To summarize, the quartiles divide the data into four equal parts: the lower 25%, the lower 50% (or median), the lower 75%, and the upper 25%.
+
+traditionally there are three quartiles: the first quartile (Q1), the second quartile (Q2), and the third quartile (Q3). These quartiles divide a dataset into four equal parts, each containing approximately 25% of the data.
+
+The first quartile (Q1) represents the 25th percentile, the second quartile (Q2) represents the 50th percentile (which is the median), and the third quartile (Q3) represents the 75th percentile.
+
+While the terms "first quartile," "second quartile," and "third quartile" imply that there should be a fourth quartile, in practice, the fourth quartile is not commonly referred to as a separate entity. Instead, the upper 25% of the data is often referred to as the "upper quartile" or "fourth quartile" informally, but it is not part of the traditional quartile calculations.
+
+To summarize, there are three quartiles (Q1, Q2, Q3) that divide the data into four equal parts, but the term "fourth quartile" is not commonly used in statistical analysis.
+-------------------------------------------------------------------------------------------
+
+Datasets: A collection of instances
+Feature: A single column of data
+Instance / Observation: A single row of data
+Training Dataset: A dataset that we feed into our machine learning algorithm to `train
+our model`
+Testing Dataset: A dataset that we `use to validate the accuracy of our model` but is not
+used to train the model. It may be called the validation dataset
