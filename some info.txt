@@ -50,3 +50,6 @@ Training Dataset: A dataset that we feed into our machine learning algorithm to 
 our model`
 Testing Dataset: A dataset that we `use to validate the accuracy of our model` but is not
 used to train the model. It may be called the validation dataset
+
+Normalization: scaling numerical data to a common range or distribution
+useful when working with features or variables that have different units of measurement
